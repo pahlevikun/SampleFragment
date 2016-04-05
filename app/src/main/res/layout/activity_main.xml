@@ -1,0 +1,36 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/tombol1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TEKAN1"/>
+        <Button
+            android:id="@+id/tombol2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TEKAN2"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/my_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragment Belum di klik"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</LinearLayout>
