@@ -17,7 +17,7 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+    
         OnClickListener listener = new OnClickListener() {
             public void onClick(View view) {
                 Fragment fragment = null;
@@ -29,11 +29,12 @@ public class MainActivity extends ActionBarActivity {
                 }
                 FragmentManager manager = getFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
+                //my_layout itu id realtive layout tadi
                 transaction.replace(R.id.my_layout, fragment);
                 transaction.commit();
             }
-        };
-
+        };  
+        //mengeset tombol di klik, sesuai id-nya
         tombol1 = (Button) findViewById(R.id.tombol1);
         tombol1.setOnClickListener(listener);
         tombol2 = (Button) findViewById(R.id.tombol2);
